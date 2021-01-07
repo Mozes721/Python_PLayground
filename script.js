@@ -1,3 +1,5 @@
+
+var day_of_week = document.getElementById('day-of-week');
 var current_date = document.getElementById("date");
 var current_time = document.getElementById("time");
 
@@ -19,9 +21,22 @@ const month = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
+var weekday = new Array(7);
+
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday"; 
+
+
 // get current date
+
 var today = new Date();
-var today_date = today.getFullYear() + '-' + month[today.getMonth()]+'-'+today.getDate();
+var day = weekday[today.getDay()];
+var today_date = month[today.getMonth()] + ' ' + today.getDate() +  ' ' + today.getFullYear(); 
 
 setInterval(gettime, 1000);
 function gettime() {
@@ -45,6 +60,6 @@ function gettime() {
     document.getElementById("time").innerHTML = time;
 }
 
-
+day_of_week.innerHTML = day;
 current_date.innerHTML = today_date;
 
