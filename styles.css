@@ -67,14 +67,19 @@ li a {
     margin: 5px;
 }
 
-@media screen and (max-width : 1024px) and (max-width : 1024px) {
+#time-zone {
+    text-align: center;
+    
+}
+
+@media screen and (max-width : 1024px) {
     .nav-links {
     width: 60%;
     } 
 }
 
 
-@media screen and (max-width : 768px) and (max-width : 1024px) {
+@media screen and (max-width : 768px) {
     body {
         overflow-x: hidden;
     }
@@ -88,11 +93,10 @@ li a {
         display: grid;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.5s ease-out;
+        
     }
-   /* .nav-links li {
-       opacity: 0;
-   } */
+    
+  
    .nav-links li a {
        color: black;
    }
@@ -126,6 +130,7 @@ section {
 .date-time {
     display: flex;
     letter-spacing: 0.05em;
+    margin: 2px;
 }
 
 .date-time div {
@@ -138,6 +143,7 @@ section {
 }
 #day-of-week {
     font-weight: bold;
+    margin: 10px;
 }
 
 #day-of-week:after {
@@ -146,13 +152,44 @@ section {
   
   position: absolute;
   width: 2px;
-  height: 80%;
-  top: 10px;
-  left: 50%;
+  height: 70%;
+  top: 45px;
+  left: 54%;
   display: block;
 }
-/* .date, .time {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}   */
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+    section {
+        font-size: 23px;
+        left: 30%;
+        top: 40%;
+    }
+
+    .date-time {
+
+        display: grid;  
+    }
+    #day-of-week:after {
+        display: none;
+    }
+    #date {
+        margin: 4px;
+    }
+ }
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    section {
+        font-size: 20px;
+        
+        left: 10%;
+    }
+ }
+
+ .nav-ease-in {
+     transition: transform 0.5s ease-in;
+    
+ }
+ 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time and Nav Bar</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 </head>
 <body>
     <nav>
@@ -12,16 +15,22 @@
         <ul class="nav-links">
 
             <li>
-                <a href="#">Home</a>
+                <a href="#" id="UTC" value=1>UTC</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="#" id="CET" value=2>CET</a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#" id="CTT" value=3>CTT</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#" id="EET" value=4>EET</a>
+            </li>
+            <li>
+                <a href="#" id="EST" value=5>EST</a>
+            </li>
+            <li>
+                <a href="#" id="CST" value=6>CST</a>
             </li>
         </ul>
         <div class="burger">
@@ -32,6 +41,9 @@
     </nav>
 
     <section>
+        <p id="time-zone">
+            Time in: UTC
+        </p>
         <div class="date-time">
             <div>
 
@@ -44,9 +56,10 @@
             </div>
             
             <div id="time">
+                
             </div>
-
         </div>
+        
     </section>
     <script src="script.js"></script>
 </body>
