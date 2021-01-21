@@ -150,3 +150,5 @@ def main():
     else:
         print("These are not the tracks you are looking for.")
         
+    if __name__ == '__main__':
+        main()
