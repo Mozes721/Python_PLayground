@@ -1,6 +1,6 @@
 import sys, random, argparse
 import numpy as np
-import math
+import math 
 import turtle
 import random
 from PIL import Image
@@ -10,7 +10,6 @@ from fractions import gcd
 class Spiro:
     #constructor 
     def __init__(self, xc, yc, col, R, r, l):
-        
         #create the turtle object 
         self.t = turtle.Turtle()
         #set the cursor shape 
