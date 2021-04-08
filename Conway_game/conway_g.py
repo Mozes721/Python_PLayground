@@ -18,6 +18,8 @@ def addGlider(i, j, grid):
                        [0,  255, 255]])
     grid[i:i+3, j:j+3] = glider
 
+#For Gospel Glider Gun pattern if args.gospel is being addressed 
+    
 # def addGosperGliderGun(i, j, grid):
 #     """adds a Gosper Glider Gun with top left cell at (i, j)"""
 #     gun = np.zeros(11*38).reshape(11, 38)
